@@ -5,7 +5,7 @@ interface ButtonYellowProps{
 function ButtonYellow({ text }:ButtonYellowProps) {
 
   return (
-    <button className="px-8 py-4 text-[#FFF] bg-yellow-scoot">{text}</button>
+    <button className="px-8 py-4 text-[#FFF] bg-yellow-scoot font-space-mono font-bold">{text}</button>
   )
 }
 
