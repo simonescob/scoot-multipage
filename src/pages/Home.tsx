@@ -1,7 +1,25 @@
 import ButtonYellow from "../components/ButtonYellow"
-// import 
+import locate from "../assets/icons/locate.svg"
 
 function Home() {
+
+  const items = [
+    {
+      img: locate,
+      title: 'Locate with app',
+      text: 'Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.'
+    },
+    {
+      img: locate,
+      title: 'Locate with app',
+      text: 'Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.'
+    },
+    {
+      img: locate,
+      title: 'Locate with app',
+      text: 'Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.'
+    },
+  ]
 
   return (
     <section id="home" className="">
@@ -25,17 +43,23 @@ function Home() {
 
       </div>
 
-      <div className="">
+      <div className="py-10 space-y-8">
         
-        <div className="">
+        {
+          items.map(item => (
 
-          {/* <img src={} alt="" /> */}
+            <div className="flex flex-col justify-center items-center text-center space-y-6">
 
-          <div className="">Locate with app</div>
+              <img src={item.img} alt="locate" />
 
-          <div className="">Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away. </div>
+              <div className="font-space-mono font-bold text-xl text-dark-navy">{item.title}</div>
 
-        </div>
+              <div className="text-base font-lexend-deca text-dim-grey">{item.text}</div>
+
+            </div>
+
+          ))
+        }
 
       </div>
 

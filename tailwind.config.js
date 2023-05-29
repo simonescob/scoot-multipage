@@ -13,7 +13,11 @@ export default {
       colors: {
         "yellow-scoot": "#FCB72B",
         "dark-navy": "#495567",
-        "dark-strong": "#333A44"
+        "dark-strong": "#333A44",
+        "dim-grey": "#939CAA",
+        "light-grey": "#E5ECF4",
+        "snow-scoot": "#F2F5F9",
+        "light-yellow": "#FFF4DF",
       },
       backgroundImage:{
         "hero-mobile": "url('./assets/images/home-hero-mobile.jpg')",

@@ -46,7 +46,7 @@ function Topbar() {
 
           <div className="" onClick={activeSideBar}>
 
-            <img src={ sideBarActived === true ? close : menuBurger } alt="menu-mobile" />
+            <img width={18} height={18} src={ sideBarActived === true ? close : menuBurger } alt="menu-mobile" />
 
           </div>
 
