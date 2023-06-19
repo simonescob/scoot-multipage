@@ -97,9 +97,9 @@ function Home() {
 
             <div key={key} className="flex flex-col justify-center items-center text-center space-y-6 relative">
 
-              <div className="absolute top-52 left-0 w-[350px] h-40 z-10 overflow-hidden">
+              <div className="absolute top-0 w-screen h-96 z-10 overflow-hidden">
 
-                <img className="relative top-10 -right-44 scale-[2]" src={ key === 1 ? rightArrow : leftArrow} alt="arrow" />
+                <img className={`relative ${ key === 1 ? 'top-10 -left-44 scale-[1.3]' : 'top-60 -right-52 scale-[2]'  }`} src={ key === 1 ? rightArrow : leftArrow } alt="arrow" />
 
               </div>
 
