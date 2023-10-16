@@ -1,14 +1,14 @@
 import './App.css'
+import AppRouter from './AppRouter'
 import Footer from './components/Footer'
 import Topbar from './components/Topbar'
-import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
       <Topbar/>
-      <Home/>
+      <AppRouter/>
       <Footer/>
     </>
   )
