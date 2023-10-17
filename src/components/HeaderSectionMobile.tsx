@@ -1,9 +1,9 @@
-import HeaderAbout from "../assets/images/about-hero-mobile.jpg"
-
-const HeaderSectionMobile = () =>  {
+const HeaderSectionMobile = (props: {text: string, img: string}) =>  {
+  const { text, img } = props;
   return (
-    <div>
-      <img src={HeaderAbout} alt="" />
+    <div className="flex justify-center items-center relative mb-10">
+      <span className="absolute font-bold text-3xl font-space-mono text-white">{text}</span>
+      <img src={img} alt="" />
     </div>
   )
 }

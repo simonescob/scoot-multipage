@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 // Import your components here
 import About from './pages/About';
@@ -25,11 +25,11 @@ const routerList = [
 
 const AppRouter: React.FC = () => {
   return (
-    <Router>
+    // <Router>
       <Routes>
         {routerList.map(route => <Route path={route.path} element={route.element} />)}
       </Routes>
-    </Router>
+    // </Router>
   );
 };
 
