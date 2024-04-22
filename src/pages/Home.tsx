@@ -50,7 +50,6 @@ function Home() {
 
   return (
     <section id="home" className="overflow-x-hidden">
-
       <div className="flex flex-col justify-center items-center px-6 space-y-7 bg-hero-mobile md:bg-hero-tablet lg:bg-hero-desktop bg-cover h-[93vh] text-white text-center relative">
         <h1 className="font-space-mono font-bold text-4xl">Scooter sharing made simple</h1>
         <p className="font-lexend-deca">
@@ -64,7 +63,6 @@ function Home() {
           </svg>
         </div>
       </div>
-
       <div className="py-10 space-y-8">
         {items.map((item, i) => (
           <div key={i} className="flex flex-col justify-center items-center text-center space-y-6">
@@ -74,11 +72,9 @@ function Home() {
           </div>
         ))}
       </div>
-
       <div className="container mx-auto px-6 py-10 space-y-20 ">
-        {itemsWithImages.map((item, i) => <ItemHome key={i} index={i} item={item} />)}
+        {itemsWithImages.map((item, i) => <ItemHome noBtn={true} key={i} index={i} item={item} />)}
       </div>
-
     </section>
   )
 

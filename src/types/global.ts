@@ -7,4 +7,5 @@ export type ItemHomeType = {
 export interface ItemHomeProps {
   index: number,
   item: ItemHomeType,
+  noBtn: boolean
 }

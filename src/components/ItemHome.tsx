@@ -5,7 +5,7 @@ import leftArrow from "../assets/patterns/left-downward-arrow.svg";
 import rightArrow from "../assets/patterns/right-arrow.svg";
 
 const ItemHome = (props: ItemHomeProps) => {
-  const { index, item } = props;
+  const { index, item, noBtn } = props;
 
   const stylesByItem = (key: number): string => {
     switch (key) {
@@ -30,7 +30,7 @@ const ItemHome = (props: ItemHomeProps) => {
       <img className="rounded-full" src={item.img} alt="locate" />
       <h2 className="font-space-mono font-bold text-3xl text-dark-navy">{item.title}</h2>
       <div className="text-base font-lexend-deca text-dim-grey">{item.text}</div>
-      <ButtonYellow text="Learn more" />
+      {noBtn === true && <ButtonYellow text="Learn more" />}
     </div>
   )
 }
